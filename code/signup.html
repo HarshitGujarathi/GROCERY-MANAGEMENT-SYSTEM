@@ -1,0 +1,93 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SignUp</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  </head>
+  <style>
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color:rgba(0,0,0, 0.7);
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    body
+    {
+      color:whitesmoke;
+      background-image: url('wallpaper.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    /* Style the form labels */
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    /* Style the form inputs */
+    input[type="number"],
+    text {
+      width: 40%;
+      padding: 10px;
+    }  
+    .submit,.btn,.a1,.btn1
+      {
+        height: 50px;
+        width: 150px;
+        font-size: 18px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        align-items: center;
+      }
+      h1
+      {
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      }
+      .btn1 {
+         
+          margin-right: 100px;
+      }
+  </style>
+  <body>
+
+
+
+
+    <div class="container">
+        <h1 class="text-center my-4">SignUp</h1>
+
+        <!-- sign up form  -->
+        <form action="signup.php" method="post">
+ 
+    <label for="username" class="form-label">Username 
+    <input type="text" class="form-control" id="username" name="username" aria-describedby="emailHelp"></label>
+  
+   
+    <label for="password" class="form-label">Password
+    <input type="password" class="form-control" id="password" name="password">
+  
+ 
+  <label for="confirmpassword" class="form-label">confirmpassword</label>
+    <input type="password" class="form-control" id="confirmpassword" name="confirmpassword">
+    <div id="emailHelp" class="form-text">Make sure type the same password</div>
+
+ 
+
+  <center><button type="submit" class="btn btn-primary col-md-6">Signup</button></center>
+</form>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
