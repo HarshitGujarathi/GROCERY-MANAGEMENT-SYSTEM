@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ 
+  
+</head>
+<style>
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color:rgba(0,0,0, 0.7);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  body
+  {
+    color:whitesmoke;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  /* Style the form labels */
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Style the form inputs */
+  input[type="number"],
+  text {
+    width: 40%;
+    padding: 10px;
+  }  
+  .submit,.btn,.a1,.btn1,.button
+		{
+			height: 50px;
+			width: 150px;
+			font-size: 18px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			align-items: center;
+		}
+    h1
+    {
+      text-align: center;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    .btn1 {
+       
+        margin-right: 100px;
+    }
+    .r1
+    {
+      color:whitesmoke;
+    }
+     
+</style>
+<body>
+  <form action="stock.php" method="post">
+    <h1>Stock Management</h1>
+    <label for="num_sell"> Product name
+      <input type="text" id="list" name="list"></label><br><br>
+      
+    <label for="num_sell">Number of Sell Product: 
+    <input type="number" id="num_sell" name="num_sell"></label><br><br>
+    
+    <label for="num_order">Number of Order Needed: 
+    <input type="number" id="num_order" name="num_order"></label><br><br>
+    
+    <label for="num_needed">Number of Product Needed :
+    <input type="number" id="num_needed" name="num_needed"></label><br><br>
+
+    <label for="num_needed">Total no of product  :
+      <input type="number" id="total_prod" name="total_prod"></label><br><br>
+    
+   <center> <button class="submit"><input type="submit" value="Submit" class="submit"><button></center> <br>
+   
+		<center><button class="btn"><a class="r1" href="stockview.php">Stock View</a></button></center>
+      
+       
+    
+      
+     
+     
+
+  </form> 
+</body>
+</html> 
